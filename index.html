@@ -12,10 +12,18 @@
 
     <script>
 
-        
+        const add = (nums) => {
+            let result = 0;
+            for(i=0; i < nums.length; i++) {
+                result += nums[i]
+            }
+            return result
+        }
 
         let nums = [2, 3, 7, 8, 10, 17, 16, 24, 23, 9, 13]
+        const total = add(nums)
 
+        console.log(total)
        
 
        
