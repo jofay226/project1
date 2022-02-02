@@ -13,10 +13,15 @@
     <script>
 
         const add = (nums) => {
-            let result = 0;
-            for(i=0; i < nums.length; i++) {
-                result += nums[i]
-            }
+            let i = 0;
+            let result = [];
+            while(nums.length > i) {
+                if(nums[i]%2 !== 0) {
+                    result.push(nums[i])
+                }
+                i++
+            } 
+
             return result
         }
 
